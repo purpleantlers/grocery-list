@@ -1,7 +1,13 @@
 const userInput = document.getElementById('userInput')
 const addBtn = document.getElementById('addBtn')
-const list = document.querySelector('.list')
+const list = document.getElementById('list')
 const warning = document.getElementById('warning')
+
+userInput.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
+    addBtn.click()
+  }
+})
 
 addBtn.addEventListener('click', () => {
   if (userInput.value === '') {

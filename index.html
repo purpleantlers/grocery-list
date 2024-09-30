@@ -4,27 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- ENLACE AL DOCUMENTO DE ESTILOS ".css" -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- ENLACE AL DOCUMENTO DE SCRIPTS ".js" -->
     <script src="index.js" defer></script>
+
     <title>Lista Compra</title>
   </head>
+
   <body>
     <div class="wrapper">
       <h2>Lista</h2>
+
       <section class="user-input">
         <input type="text" id="userInput" placeholder="Añadir..." />
+
         <button id="addBtn">
-          <img src="./assets/add.png" alt="">
+          <img src="./assets/add.svg" alt="" />
         </button>
       </section>
+
       <section>
-        <ul class="list"></ul>
+        <ul class="list" id="list"></ul>
       </section>
-      <aside class="warning" id="warning">
-        <div></div>
-        <h4>no hay nada que añadir</h4>
-        <div></div>
-      </aside>
+
+      <h4 class="warning" id="warning">no hay nada que añadir</h4>
     </div>
   </body>
 </html>
