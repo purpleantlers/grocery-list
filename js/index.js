@@ -19,7 +19,7 @@ addBtn.addEventListener('click', () => {
         <div class="list-element">
           <li>${userInput.value}</li>
           <button class="delete-btn">
-            <img src="./assets/bin.svg" alt="">
+            <img src="/assets/bin.svg" alt="">
           </button>
         </div>
       `
